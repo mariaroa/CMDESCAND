@@ -46,3 +46,11 @@ a.nav-link:hover {
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
+.img-tour-overlay{
+    height: 240px;
+}
+@media (min-width:1080){
+    .img-tour-overlay{
+        height: 240px !important;
+    }
+}
