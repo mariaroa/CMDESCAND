@@ -1,92 +1,54 @@
 /* Copia y pega el código de importación de la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
 a.nav-link {
     color: #d9dada;
     font-family: 'Lilita One', cursive;
     font-size: 20px;
 }
-
 a.nav-link:hover {
     color: #61a375;
 }
-
 .nav-pills {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     --bs-nav-pills-link-active-color: #d9dada;
     --bs-nav-pills-link-active-bg: #61a375 !important;
 }
-
 :root{
     --bs-link-color: #61a375;
     --bs-link-hover-color: #61a375;
 }
-
-.fondo_video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/images/tablet_1.png);
-    background-size: cover;
-    background-position: center;
+.video_test {
+    top: 186px;
 }
-
-.container_video {
-    position: relative;
+.frame{
+    height: 580px;
+    width: 813px;
   }
-
-.video {
-    position: absolute;
-  }
-
-/* Estilos para pantallas pequeñas */
 @media (max-width: 767px) {
     /* Aquí puedes agregar los estilos específicos para pantallas pequeñas */
   }
   
-  /* Estilos para pantallas medianas */
-  @media (min-width: 768px) and (max-width: 1799px) {
-    /* Aquí puedes agregar los estilos específicos para pantallas medianas */
-    .fondo_video{
-        width: 87%;
-        height: 89%;
-    }
-    
-    .container_video {
-        width: 90%;
-        height: 0;
-        padding-bottom: 55%;
-        margin-right: 3%;
-      }
-    
-    .video {
-        top: 5.3%;
-        left: 4%;
-        width: 85.4%;
-        height: 90.7%;
-      }
-  }
-  
-  /* Estilos para pantallas grandes */
-  @media (min-width: 1800px) {
+@media (min-width: 992px) and (max-width: 1079px) {
     /* Aquí puedes agregar los estilos específicos para pantallas grandes */
-    .fondo_video{
-        width: 87%;
-        height: 89%;
+    .video_test {
+        left: 489px;
     }
-    
-    .container_video {
-        width: 100%;
-        height: 0;
-        padding-bottom: 47%; /* Proporción 16:9 (ajustable según tus necesidades) */
-        margin-right: 8%;
-      }
-    
-    .video {
-        top: 5.4%;
-        left: 3.7%;
-        width: 86%;
-        height: 90.7%;
-      }
   }
-  
+@media (min-width: 1080px) and (max-width: 1899px) {
+    /* Aquí puedes agregar los estilos específicos para pantallas muy grandes */
+    .video_test {
+        left: 489px;
+    }
+  }
+@media (min-width: 1900px) and (max-width: 1920px) {
+    /* Aquí puedes agregar los estilos específicos para pantallas muy grandes */
+    .video_test {
+        left: 517px;
+    }
+   }
+@media (min-width: 1921px) {
+    /* Aquí puedes agregar los estilos específicos para pantallas muy grandes */
+    .video_test {
+        left: 800px;
+    }    
+  }
