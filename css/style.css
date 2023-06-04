@@ -24,29 +24,69 @@ a.nav-link:hover {
     height: 580px;
     width: 813px;
   }
-@media (max-width: 767px) {
-    /* Aquí puedes agregar los estilos específicos para pantallas pequeñas */
+/* Aquí puedes agregar los estilos específicos para pantallas de dispositivos móviles */
+  @media screen and (max-width: 370px) and (max-width: 411px) {
+    
+    .video_test {
+        left: 16px !important;
+    }
+    .frame{
+        height: 210px !important;
+        width: 309px !important;
+      }
+    .video_test {
+        top: 274px !important;
+    }
   }
-  
-@media (min-width: 992px) and (max-width: 1079px) {
+
+/* Aquí puedes agregar los estilos específicos para desktop*/
+@media (max-width: 412px) and (max-width: 991px) {
+    /* Aquí puedes agregar los estilos específicos para pantallas pequeñas */
+    .video_test {
+        left: 17px;
+    }
+    .frame{
+        height: 239px;
+        width: 335px;
+      }
+    .video_test {
+        top: 220px;
+    }
+    a.nav-link {
+        font-size: 15px;
+    }
+  }
+@media (min-width: 992px) and (max-width: 1349px) {
+    /* Aquí puedes agregar los estilos específicos para portatil */
+    .video_test {
+        left: 212px;
+    }
+  }
+@media (min-width: 1350px) and (max-width: 1399px) {
+    /* Aquí puedes agregar los estilos específicos para portatil MAC */
+    .video_test {
+        left: 262px;
+    }
+  }
+@media (min-width: 1400px) and (max-width: 1499px) {
     /* Aquí puedes agregar los estilos específicos para pantallas grandes */
     .video_test {
-        left: 489px;
+        left: 212px;
     }
   }
-@media (min-width: 1080px) and (max-width: 1899px) {
+@media (min-width: 1500px) and (max-width: 1899px) {
     /* Aquí puedes agregar los estilos específicos para pantallas muy grandes */
     .video_test {
         left: 489px;
     }
   }
-@media (min-width: 1900px) and (max-width: 1920px) {
+@media (min-width: 1900px) and (max-width: 1949px) {
     /* Aquí puedes agregar los estilos específicos para pantallas muy grandes */
     .video_test {
-        left: 517px;
+        left: 518px;
     }
    }
-@media (min-width: 1921px) {
+@media (min-width: 1950px) {
     /* Aquí puedes agregar los estilos específicos para pantallas muy grandes */
     .video_test {
         left: 800px;
