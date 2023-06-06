@@ -11,7 +11,7 @@ a.nav-link:hover {
 .nav-pills {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     --bs-nav-pills-link-active-color: #d9dada;
-    --bs-nav-pills-link-active-bg: #61a375 !important;
+    --bs-nav-pills-link-active-bg: #61a375;
 }
 :root{
     --bs-link-color: #61a375;
