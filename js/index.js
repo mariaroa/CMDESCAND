@@ -19,7 +19,7 @@ var menuContacto = document.getElementById('menu-contacto');
 if (currentUrl === 'http://192.168.1.89:5500/index.html') {
     menuInicio.style.cssText = 'color: #61a375 !important;';
 }
-if (currentUrl === './index.html') {
+if (currentUrl === 'http://192.168.1.89:5500/servicios.html') {
     menuServicios.style.cssText = 'color: #61a375!important;';
 }
 

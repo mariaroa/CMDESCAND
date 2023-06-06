@@ -24,6 +24,10 @@ a.nav-link:hover {
     height: 580px;
     width: 813px;
   }
+.copyr{
+    justify-content: center;
+    display: flex;
+  }
 /* Aquí puedes agregar los estilos específicos para pantallas de dispositivos móviles */
   @media screen and (max-width: 370px) and (max-width: 411px) {
     
