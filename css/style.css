@@ -28,6 +28,36 @@ a.nav-link:hover {
     justify-content: center;
     display: flex;
   }
+.tour-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF80;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.card:hover .tour-overlay{
+    width: 100%;
+}
+.text-overlay{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+div.row-banner{
+  --bs-gutter-x: 0;
+}
+
+
 /* Aquí puedes agregar los estilos específicos para pantallas de dispositivos móviles */
   @media screen and (max-width: 370px) and (max-width: 411px) {
     
@@ -42,7 +72,6 @@ a.nav-link:hover {
         top: 274px !important;
     }
   }
-
 /* Aquí puedes agregar los estilos específicos para desktop*/
 @media (max-width: 412px) and (max-width: 991px) {
     /* Aquí puedes agregar los estilos específicos para pantallas pequeñas */
