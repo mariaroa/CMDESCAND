@@ -3,9 +3,9 @@
         <img src="<?php echo constant('URL') ?>public/images/cmdescand_logo.png" class="img-fluid"  alt="logo">
     </a>
     <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Inicio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Acerca de</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+        <li class="nav-item"><a href="http://localhost/" class="nav-link" id="menu-inicio">Inicio</a></li>
+        <li class="nav-item"><a href="http://localhost/servicios" class="nav-link" id="menu-servicios">Servicios</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" id="menu-acerca-de">Acerca de</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" id="menu-contacto">Contacto</a></li>
     </ul>
 </header>
