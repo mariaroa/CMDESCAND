@@ -8,6 +8,10 @@ a.nav-link {
 a.nav-link:hover {
     color: #61a375;
 }
+.continua{
+  color: #61a375;
+  font-weight: bold;
+}
 .nav-pills {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     --bs-nav-pills-link-active-color: #d9dada;
@@ -55,6 +59,9 @@ a.nav-link:hover {
 }
 div.row-banner{
 --bs-gutter-x: 0;
+}
+.text-primary {
+  color: #ef7f1a!important;
 }
 /* Aquí puedes agregar los estilos específicos para pantallas de dispositivos móviles */
   @media screen and (max-width: 370px) and (max-width: 411px) {
