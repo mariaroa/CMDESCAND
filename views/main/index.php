@@ -85,4 +85,3 @@ require 'views/header/index.php';
 <?php
 require 'views/footer/index.php';
 ?>
-<script src="../../public/js/index.js"></script>
