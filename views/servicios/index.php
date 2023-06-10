@@ -16,7 +16,7 @@ require 'views/header/index.php';
         <div class="text-overlay">"Explora un mundo de posibilidades con nuestra realidad 360 y escáner de vanguardia."</div>
     </div>
 </div>
-<div class="container mt-3">
+<div class="container mt-3 container-servicios">
     <div class="row">
         <div class="col-lg-6">
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
