@@ -8,14 +8,15 @@ a.nav-link {
 a.nav-link:hover {
     color: #61a375;
 }
-.nav-pills {
+.nav-pills .nav {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     --bs-nav-pills-link-active-color: #d9dada;
-    --bs-nav-pills-link-active-bg: #61a375;
+    --bs-nav-pills-link-active-bg: #61a375;    
 }
 :root{
     --bs-link-color: #61a375;
     --bs-link-hover-color: #61a375;
+    --bs-secondary-color: #d9dada;
 }
 .video_test {
     top: 186px;
