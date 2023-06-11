@@ -11,6 +11,7 @@ a.nav-link:hover {
 .continua{
   color: #61a375;
   font-weight: bold;
+  padding: 15px 0;
 }
 .nav-pills {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
@@ -42,6 +43,9 @@ a.nav-link:hover {
   width: 0;
   height: 100%;
   transition: .5s ease;
+}
+.card{
+  align-items: center !important;
 }
 .card:hover .tour-overlay{
   width: 100%;
