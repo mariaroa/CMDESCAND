@@ -18,7 +18,7 @@ require 'views/header/index.php';
 <div class="container mt-3">
     <div class="row">
         <div class="col-lg-6">
-            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card card-services flex-md-row mb-4 box-shadow h-md-250">
                 <div class="card-body d-flex flex-column align-items-start">
                     <strong class="d-inline-block mb-2 text-primary">ARQUITECTURA-INGENIERIA- BIM</strong>
                     <p class="card-text mb-auto">En construcción es una herramienta de uso en distintas fases de un proyecto.</p>
@@ -28,7 +28,7 @@ require 'views/header/index.php';
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card card-services flex-md-row mb-4 box-shadow h-md-250">
                 <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 300px; height: auto;" src="<?php echo constant('URL') ?>public/images/inmobiliaria.png" data-holder-rendered="true">
                 <div class="card-body d-flex flex-column align-items-start">
                     <strong class="d-inline-block mb-2 text-primary">INMOBILIARIO Y COMERCIAL</strong>
@@ -40,7 +40,7 @@ require 'views/header/index.php';
     </div>
     <div class="row">
             <div class="col-lg-6">
-                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card card-services flex-md-row mb-4 box-shadow h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
                         <strong class="d-inline-block mb-2 text-primary">HOSTELERIA</strong>
                         <p class="card-text mb-auto">Las visitas virtuales 360 en hostelería ofrecen una serie de ventajas para los negocios del sector.</p>
@@ -50,7 +50,7 @@ require 'views/header/index.php';
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card card-services flex-md-row mb-4 box-shadow h-md-250">
                     <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 300px; height: auto;" src="<?php echo constant('URL') ?>public/images/seguros.png" data-holder-rendered="true">
                     <div class="card-body d-flex flex-column align-items-start">
                         <strong class="d-inline-block mb-2 text-primary">SEGUROS Y PATRIMONIO</strong>
