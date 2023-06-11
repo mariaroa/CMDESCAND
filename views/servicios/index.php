@@ -7,7 +7,7 @@ require 'views/header/index.php';
         <div class="col-md-6">
             <img class="card-img img-fluid img-tour-overlay" src="<?php echo constant('URL') ?>public/images/prueba.jpg" alt="Card image">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 hide-on-mobile">
             <img class="card-img img-fluid img-tour-overlay" src="<?php echo constant('URL') ?>public/images/prueba.jpg" alt="Card image">
         </div>
     </div>

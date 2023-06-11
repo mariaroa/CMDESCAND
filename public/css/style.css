@@ -80,6 +80,9 @@ div.row-banner{
     .video_test {
         top: 274px !important;
     }
+    div .hide-on-mobile {
+      display: none !important;
+    }
   }
 
 /* Aquí puedes agregar los estilos específicos para desktop*/
@@ -97,6 +100,9 @@ div.row-banner{
     }
     a.nav-link {
         font-size: 15px;
+    }
+    div .hide-on-mobile {
+      display: none !important;
     }
   }
 @media (min-width: 992px) and (max-width: 1349px) {
