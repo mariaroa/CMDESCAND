@@ -2,71 +2,171 @@
 require 'views/index/index.php';
 require 'views/header/index.php';
 ?>
-<div class="d-flex justify-content-center">
-    <img src="<?php echo constant('URL') ?>public/images/contacto.jpg" alt="imagen de https://www.freepik.es/fotos-vectores-gratis/formulario" class="img-thumbnail img-contacto">
-</div>
-<link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css" rel="stylesheet" type="text/css" />
- 
 <div class="container">
-     <div class="row d-flex justify-content-center mt-200"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Launch multistep Wizard </button> </div> <!-- Modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-             <div class="modal-content">
-                 <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">Smart Wizard modal</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                 </div>
-                 <div class="modal-body">
-                     <div id="smartwizard">
-                         <ul>
-                             <li><a href="#step-1">Step 1<br /><small>Account Info</small></a></li>
-                             <li><a href="#step-2">Step 2<br /><small>Personal Info</small></a></li>
-                             <li><a href="#step-3">Step 3<br /><small>Payment Info</small></a></li>
-                             <li><a href="#step-4">Step 4<br /><small>Confirm details</small></a></li>
-                         </ul>
-                         <div class="mt-4">
-                             <div id="step-1">
-                                 <div class="row">
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Name" required> </div>
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Email" required> </div>
-                                 </div>
-                                 <div class="row mt-3">
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Password" required> </div>
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Repeat password" required> </div>
-                                 </div>
-                             </div>
-                             <div id="step-2">
-                                 <div class="row">
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Address" required> </div>
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="City" required> </div>
-                                 </div>
-                                 <div class="row mt-3">
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="State" required> </div>
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Country" required> </div>
-                                 </div>
-                             </div>
-                             <div id="step-3" class="">
-                                 <div class="row">
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Card Number" required> </div>
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Card Holder Name" required> </div>
-                                 </div>
-                                 <div class="row mt-3">
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="CVV" required> </div>
-                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="Mobile Number" required> </div>
-                                 </div>
-                             </div>
-                             <div id="step-4" class="">
-                                 <div class="row">
-                                     <div class="col-md-12"> <span>Thanks For submitting your details with BBBootstrap.com. we will send you a confirmation email. We will review your details and revert back.</span> </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
+    
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+        <img src="<?php echo constant('URL') ?>public/images/contacto.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <!-- Button trigger modal -->
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#swModal">
+        Contacto
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="swModal" tabindex="-1" aria-labelledby="swModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="swModalLabel">Contacto</h5>
+
+            <div class="float-end text-muted ms-5">
+              Paso número: <span id="sw-current-step">2</span> de <span id="sw-total-step">4</span>
+            </div>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- SmartWizard html -->
+            <div id="smartwizard" dir="" class="sw sw-theme-arrows sw-justified">
+                <ul class="nav nav-progress">
+                    <li class="nav-item">
+                      <a class="nav-link default active" href="#step-1">
+                        <div class="num">1</div>
+                        Datos personales
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link default done" href="#step-2">
+                        <span class="num">2</span>
+                        Datos de contacto
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link default done" href="#step-3">
+                        <span class="num">3</span>
+                        Petición, queja o recurso
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link default done" href="#step-4">
+                        <span class="num">4</span>
+                        Confirmar
+                      </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" style="height: 211.188px;">
+                  <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1" style="display: block;">
+                    <h3>Datos Personales</h3>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre-contacto" placeholder="Nombre">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="apellido" class="col-sm-2 col-form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido-contacto" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6 d-flex align-items-end">
+                            <select class="form-control" id="documento-contacto">
+                                <option>CC</option>
+                                <option>DNI</option>
+                                <option>VISA</option>
+                                <option>OTRO</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="numero-documento" class="col-sm-2 col-form-label">Numero</label>
+                            <input type="number" class="form-control" id="numero-documento-contacto" placeholder="Número del documento">
+                        </div>
+                    </div>
+                </div>
+
+                  <div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2" style="display: none;">
+                    <h3>Datos de contacto</h3>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="direccion" class="col-sm-2 col-form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion-contacto" placeholder="Dirección">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="email" class="col-sm-2 col-form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo-contacto" placeholder="Correo">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <div class="col-auto">
+                                <label class="sr-only" for="telefono">Teléfono</label>
+                                <div class="input-group mb-2">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">+34</div>
+                                  </div>
+                                  <input type="number" class="form-control" id="telefono-contacto" placeholder="Teléfono">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-auto">
+                                <label class="sr-only" for="movil">Móvil</label>
+                                <div class="input-group mb-2">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">+34</div>
+                                  </div>
+                                  <input type="number" class="form-control" id="movil-contacto" placeholder="Móvil">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3" style="display: none;">
+                        <h3>Petición, queja o recurso</h3>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                          </div>
+                    </div>
+                    <div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4" style="display: none;">
+                        <h3>Confirmar</h3>
+                        <p>
+                          De conformidad con lo previsto en la Ley Española “por la cual se dictan las disposiciones generales para la protección de datos personales”, que la reglamentan parcialmente, manifiesto que otorgo mi autorización expresa y clara para que la empresa CMDESCAND pueda hacer tratamiento y uso de mis datos personales, los cuales estarán reportados en la base de datos de la que es responsable dicha organización y que han sido recolectados en las relaciones contractuales que ésta realiza. SI acepta dichas condiciones por favor oprima el botón "FINALIZAR" para enviar los datos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" id="prev-btn-modal">Anterior</button>
+            <button class="btn btn-primary" id="next-btn-modal">Siguiente</button>
+            <button class="btn btn-success" onclick="onFinish()">Finalizar</button>
+            <button class="btn btn-secondary" onclick="onCancel()">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br> &nbsp;
+</div>
+
 <?php
 require 'views/footer/index.php';
 ?>
