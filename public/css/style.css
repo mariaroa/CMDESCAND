@@ -24,6 +24,19 @@ a.nav-link:hover {
 :root{
     --bs-link-color: #61a375;
     --bs-link-hover-color: #61a375;
+    --sw-anchor-active-primary-color: #61a375 !important;
+    --sw-anchor-done-primary-color: #d9dada !important;
+    --sw-progress-color: #61a375 !important;
+}
+.btn-primary{
+  --bs-btn-bg: #61a375;
+  --bs-btn-border-color: #61a375;
+  --bs-btn-hover-bg: #61a375;
+  --bs-btn-hover-border-color: #61a375;
+  --bs-btn-active-bg: #61a375;
+  --bs-btn-active-border-color: #61a375;
+  --bs-btn-disabled-bg: #61a375;
+  --bs-btn-disabled-border-color: #61a375;
 }
 .video_test {
     top: 186px;
