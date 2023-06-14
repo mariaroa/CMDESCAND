@@ -1,34 +1,29 @@
 /* Copia y pega el código de importación de la fuente */
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Quicksand:wght@400;700&display=swap');
 a.nav-link {
     color: #d9dada;
     font-family: 'Lilita One', cursive;
     font-size: 20px;
 }
+body{
+  font-family: 'Quicksand', sans-serif;
+}
 a.nav-link:hover {
     color: #61a375;
 }
-.nav-pills {
+.continua{
+  color: #61a375;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.nav-pills .nav {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     --bs-nav-pills-link-active-color: #d9dada;
-    --bs-nav-pills-link-active-bg: #61a375;
+    --bs-nav-pills-link-active-bg: #61a375;    
 }
 :root{
     --bs-link-color: #61a375;
     --bs-link-hover-color: #61a375;
-    --sw-anchor-active-primary-color: #61a375 !important;
-    --sw-anchor-done-primary-color: #d9dada !important;
-    --sw-progress-color: #61a375 !important;
-}
-.btn-primary{
-  --bs-btn-bg: #61a375;
-  --bs-btn-border-color: #61a375;
-  --bs-btn-hover-bg: #61a375;
-  --bs-btn-hover-border-color: #61a375;
-  --bs-btn-active-bg: #61a375;
-  --bs-btn-active-border-color: #61a375;
-  --bs-btn-disabled-bg: #61a375;
-  --bs-btn-disabled-border-color: #61a375;
 }
 .video_test {
     top: 186px;
@@ -52,6 +47,9 @@ a.nav-link:hover {
   height: 100%;
   transition: .5s ease;
 }
+.card-services{
+  align-items: center !important;
+}
 .card:hover .tour-overlay{
   width: 100%;
 }
@@ -68,6 +66,43 @@ a.nav-link:hover {
 }
 div.row-banner{
 --bs-gutter-x: 0;
+}
+.text-primary {
+  color: #ef7f1a!important;
+}
+.description-arquitectura{
+  background-image: url("http://localhost/public/images/arquitectura_opacity.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding-top: 50px;
+}
+.description-inmobiliario{
+  background-image: url("http://localhost/public/images/inmobiliaria-opacity.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding-top: 50px;
+}
+.beneficios{
+  display: flex;
+  align-items: center;
+}
+.container-servicios{
+  font-size: larger;
+}
+.carousel-inner{
+  margin: 2% 2% 2% 0;
+  padding: 0 5% 0 5%;
+}
+.servicios-title{
+  color:  #61a375!important;
+  font-weight: bolder;
+}
+.description-inmobiliario img{
+  width: 50%;
 }
 .img-contacto{
   height: auto;
@@ -102,6 +137,12 @@ div.row-banner{
     .video_test {
         top: 274px !important;
     }
+    div .hide-on-mobile {
+      display: none !important;
+    }
+    .container-servicios{
+      font-size: 5px;
+    }
   }
 
 /* Aquí puedes agregar los estilos específicos para desktop*/
@@ -119,6 +160,9 @@ div.row-banner{
     }
     a.nav-link {
         font-size: 15px;
+    }
+    div .hide-on-mobile {
+      display: none !important;
     }
   }
 @media (min-width: 992px) and (max-width: 1349px) {

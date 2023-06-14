@@ -4,10 +4,10 @@
       <div class="col-12 col-md">
         <img class="mb-2" src="/images/cmdescand_logo.png" alt="" width="50" height="auto">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Servicios</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Acerca de </a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>          
+          <li class="nav-item"><a href="http://localhost/" class="nav-link px-2" id="menu-inicio">Inicio</a></li>
+          <li class="nav-item"><a href="http://localhost/servicios" class="nav-link px-2" id="menu-servicios">Servicios</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2" id="menu-acerca-de">Acerca de </a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2" id="menu-contacto">Contacto</a></li>          
         </ul>
         <div class="copyr">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
