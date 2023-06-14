@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  web-php:
+    build: .
+    container_name: web-cmdescand
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes: 
+        - ./:/var/www/html/
+    networks: 
+      - web-cmdescand
+
+networks:
+  web-cmdescand:
+    external: true
