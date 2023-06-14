@@ -1,11 +1,10 @@
+
+
 // Obtener la URL actual
 var currentUrl = window.location.href;
 
-console.log(currentUrl)
-
 // Obtener el elemento del menú de inicio
 var menuInicio = document.getElementById('menu-inicio');
-console.log(menuInicio)
 
 // Obtener el elemento del menú de "Acerca de"
 var menuServicios = document.getElementById('menu-servicios'); 
@@ -31,6 +30,7 @@ if (currentUrl === 'https://www.ejemplo.com/acerca-de') {
 }
 
 // Comprobar si la página es la página "Contacto"
-if (currentUrl === 'https://www.ejemplo.com/contacto') {
+if (currentUrl === 'http://localhost/contacto') {
   menuContacto.style.cssText = 'color: #61a375!important';
 }
+

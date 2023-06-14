@@ -4,10 +4,10 @@
       <div class="col-12 col-md">
         <img class="mb-2" src="/images/cmdescand_logo.png" alt="" width="50" height="auto">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Servicios</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Acerca de </a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>          
+          <li class="nav-item"><a href="http://localhost/" class="nav-link px-2" id="menu-inicio">Inicio</a></li>
+          <li class="nav-item"><a href="http://localhost/servicios" class="nav-link px-2" id="menu-servicios">Servicios</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2" id="menu-acerca-de">Acerca de </a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2" id="menu-contacto">Contacto</a></li>          
         </ul>
         <div class="copyr">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -24,3 +24,80 @@
   </footer>
 </div>
 <script src="../../public/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function onFinish(){ alert('Finish Clicked'); }
+        function onCancel(){ $('#smartwizard').smartWizard("reset"); }
+
+        $(function() {
+            // Step show event
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection, stepPosition) {
+                $("#prev-btn").removeClass('disabled').prop('disabled', false);
+                $("#next-btn").removeClass('disabled').prop('disabled', false);
+                if(stepPosition === 'first') {
+                    $("#prev-btn").addClass('disabled').prop('disabled', true);
+                } else if(stepPosition === 'last') {
+                    $("#next-btn").addClass('disabled').prop('disabled', true);
+                } else {
+                    $("#prev-btn").removeClass('disabled').prop('disabled', false);
+                    $("#next-btn").removeClass('disabled').prop('disabled', false);
+                }
+
+                // Get step info from Smart Wizard
+                let stepInfo = $('#smartwizard').smartWizard("getStepInfo");
+                $("#sw-current-step").text(stepInfo.currentStep + 1);
+                $("#sw-total-step").text(stepInfo.totalSteps);
+            });
+
+            // Smart Wizard
+            $('#smartwizard').smartWizard({
+                selected: 0,
+                // autoAdjustHeight: false,
+                theme: 'arrows', // basic, arrows, square, round, dots
+                transition: {
+                  animation:'none'
+                },
+                toolbar: {
+                  showNextButton: true, // show/hide a Next button
+                  showPreviousButton: true, // show/hide a Previous button
+                  position: 'none' // none/ top/ both bottom
+                },
+                anchor: {
+                    enableNavigation: true, // Enable/Disable anchor navigation 
+                    enableNavigationAlways: false, // Activates all anchors clickable always
+                    enableDoneState: true, // Add done state on visited steps
+                    markPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                    unDoneOnBackNavigation: false, // While navigate back, done state will be cleared
+                    enableDoneStateNavigation: true // Enable/Disable the done state navigation
+                },
+                disabledSteps: [], // Array Steps disabled
+                errorSteps: [], // Highlight step with errors
+                hiddenSteps: []
+            });
+
+            $("#prev-btn-modal").on("click", function() {
+                // Navigate previous
+                $('#smartwizard').smartWizard("prev");
+                return true;
+            });
+
+            $("#next-btn-modal").on("click", function() {
+                // Navigate next
+                $('#smartwizard').smartWizard("next");
+                return true;
+            });
+
+            $("#state_selector").on("change", function() {
+                $('#smartwizard').smartWizard("setState", [$('#step_to_style').val()], $(this).val(), !$('#is_reset').prop("checked"));
+                return true;
+            });
+
+            $("#style_selector").on("change", function() {
+                $('#smartwizard').smartWizard("setStyle", [$('#step_to_style').val()], $(this).val(), !$('#is_reset').prop("checked"));
+                return true;
+            });
+
+        });
+      </script>

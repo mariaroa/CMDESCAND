@@ -6,6 +6,6 @@
         <li class="nav-item"><a href="http://localhost/" class="nav-link" id="menu-inicio">Inicio</a></li>
         <li class="nav-item"><a href="http://localhost/servicios" class="nav-link" id="menu-servicios">Servicios</a></li>
         <li class="nav-item"><a href="#" class="nav-link" id="menu-acerca-de">Acerca de</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" id="menu-contacto">Contacto</a></li>
+        <li class="nav-item"><a href="http://localhost/contacto" class="nav-link" id="menu-contacto">Contacto</a></li>
     </ul>
 </header>
