@@ -5,6 +5,8 @@
     <?php
     $queried_object = get_queried_object();
     $page_template = get_page_template_slug($queried_object->ID);
+    echo $queried_object;
+    echo $page_template;
 
     if ($page_template === 'content-servicios.php') {
         // Página de servicios
