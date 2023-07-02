@@ -1,3 +1,4 @@
+<?php wp_head(); ?>
 <?php get_header(); ?>
 
 <main id="main-content" class="site-main">
