@@ -6,10 +6,10 @@
     if (is_front_page()) {
         // Página de inicio
         get_template_part('template-parts/content', 'home');
-    } elseif (is_page('http://localhost:8080/contacto')) {
+    } elseif (is_page('/')) {
         // Página de contacto
         get_template_part('template-parts/content', 'contacto');
-    } elseif (is_page('http://localhost:8080/servicios')) {
+    } elseif (is_page('/servicios')) {
         // Página de servicios
         get_template_part('template-parts/content', 'servicios');
     } elseif (is_page('nosotros')) {
