@@ -3,6 +3,7 @@
 
 <main id="main-content" class="site-main">
     <?php
+    echo is_page();
     if (is_front_page()) {
         // Página de inicio
         get_template_part('template-parts/content', 'home');
