@@ -15,10 +15,10 @@
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/cmdescand_logo.png" class="img-fluid" alt="logo">
     </a>
     <ul class="nav nav-pills">
-        <li class="nav-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link <?php if (is_front_page()) echo 'active'; ?>" id="menu-inicio">Inicio</a></li>
-        <li class="nav-item"><a href="<?php echo esc_url(home_url('/servicios')); ?>" class="nav-link <?php if (is_page('servicios')) echo 'active'; ?>" id="menu-servicios">Servicios</a></li>
-        <li class="nav-item"><a href="<?php echo esc_url(home_url('/acerca-de')); ?>" class="nav-link <?php if (is_page('acerca-de')) echo 'active'; ?>" id="menu-acerca-de">Acerca de</a></li>
-        <li class="nav-item"><a href="<?php echo esc_url(home_url('/contacto')); ?>" class="nav-link <?php if (is_page('contacto')) echo 'active'; ?>" id="menu-contacto">Contacto</a></li>
+        <li class="nav-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link" id="menu-inicio">Inicio</a></li>
+        <li class="nav-item"><a href="<?php echo get_permalink( get_page_by_title( 'servicios' ) ); ?>" class="nav-link" id="menu-servicios">Servicios</a></li>
+        <li class="nav-item"><a href="<?php echo get_permalink( get_page_by_title( 'acerca-de' ) ); ?>" class="nav-link" id="menu-acerca-de">Acerca de</a></li>
+        <li class="nav-item"><a href="<?php echo get_permalink( get_page_by_title( 'contacto' ) ); ?>" class="nav-link" id="menu-contacto">Contacto</a></li>
     </ul>
 </header>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
