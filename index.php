@@ -9,7 +9,7 @@
     } elseif (is_page('contacto')) {
         // Página de contacto
         get_template_part('template-parts/content', 'contacto');
-    } elseif (is_page('/servicios')) {
+    } elseif (is_page('servicios')) {
         // Página de servicios
         get_template_part('template-parts/content', 'servicios');
     } elseif (is_page('nosotros')) {
